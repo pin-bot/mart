@@ -1,0 +1,123 @@
+%%writefile index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penawaran Spesial - Nama Produk Anda</title>
+    <meta name="description" content="Dapatkan diskon 50% untuk produk terbaik kami. Klik sekarang!">
+    <meta property="og:title" content="Penawaran Eksklusif!" />
+    <meta property="og:description" content="Diskon besar-besaran untuk waktu terbatas." />
+    <meta property="og:image" content="URL_GAMBAR_PRODUK.jpg" />
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+    <header>
+        <h1>Nama Produk/Layanan</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Solusi Terbaik untuk Masalah Anda</h2>
+            <p>Hemat waktu, hemat uang, dan dapatkan hasil maksimal.</p>
+            <a href="#form-order" class="cta-button">Pesan Sekarang!</a>
+        </section>
+
+        <section class="fitur">
+            </section>
+
+        <section id="form-order" class="konversi">
+            <h3>Daftar dan Klaim Penawaran Anda</h3>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="nama" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <button type="submit">Kirim dan Dapatkan Ebook Gratis</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nama Perusahaan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+%%writefile index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penawaran Spesial - Nama Produk Anda</title>
+    <meta name="description" content="Dapatkan diskon 50% untuk produk terbaik kami. Klik sekarang!">
+    <meta property="og:title" content="Penawaran Eksklusif!" />
+    <meta property="og:description" content="Diskon besar-besaran untuk waktu terbatas." />
+    <meta property="og:image" content="URL_GAMBAR_PRODUK.jpg" />
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Nama Produk/Layanan</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Solusi Terbaik untuk Masalah Anda</h2>
+            <p>Hemat waktu, hemat uang, dan dapatkan hasil maksimal.</p>
+            <a href="#form-order" class="cta-button">Pesan Sekarang!</a>
+        </section>
+
+        <section class="fitur">
+            </section>
+
+        <section id="form-order" class="konversi">
+            <h3>Daftar dan Klaim Penawaran Anda</h3>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="nama" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <button type="submit">Kirim dan Dapatkan Ebook Gratis</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nama Perusahaan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1234567890123456&ev=PageView&noscript=1"
+/></noscript>
+<script>
+  // Perhatian: Ganti nilai '99.99', 'USD', 'Produk Premium', dan 'SKU123' 
+  // dengan nilai yang sebenarnya dan dinamis dari transaksi Anda.
+
+  // Pengecekan penting untuk memastikan Meta Pixel sudah dimuat sebelum digunakan.
+  if (typeof fbq === 'function') {
+    
+    // Mengirim event "Purchase" ke Meta Pixel
+    fbq('track', 'Purchase', {
+      value: 99.99,            // Nilai total transaksi (misal: 125.00)
+      currency: 'USD',         // Mata uang (misal: 'IDR' atau 'EUR')
+      content_name: 'Produk Premium', // Nama item atau kategori
+      content_ids: ['SKU123'], // ID Produk/SKU (bisa berupa array ['SKU123', 'SKU456'])
+      content_type: 'product'  // Jenis konten
+    });
+    
+  } else {
+    // Opsional: Pesan peringatan jika Anda ingin tahu Pixel tidak terkirim
+    console.warn("Meta Pixel (fbq) tidak ditemukan. Event Purchase tidak terkirim.");
+  }
+</script>
